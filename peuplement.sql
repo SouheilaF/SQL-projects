@@ -1,4 +1,3 @@
--- On copie les données des fichiers
 
 \copy departements_france FROM 'departements-france.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
 \copy liste_baignades FROM 'liste-des-sites-de-baignade-saison-balneaire-2024.csv' DELIMITER ';' CSV HEADER ENCODING 'LATIN1';
