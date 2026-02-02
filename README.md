@@ -1,4 +1,6 @@
 L'objectif de ce projet est de faire une base de données des stations balnéaires, ainsi que de la peupler.
+Afin de mieux visualiser le projet, un schéma est à disposition en imzge grâce à l'AGL Looping.
+
 
 Les références du peuplement se trouvent aux liens suivants :
 
