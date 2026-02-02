@@ -1,3 +1,11 @@
+-- On copie les données des fichiers
+
+\copy departements_france FROM 'departements-france.csv' WITH (FORMAT csv, HEADER true, ENCODING 'UTF8');
+\copy liste_baignades FROM 'liste-des-sites-de-baignade-saison-balneaire-2024.csv' DELIMITER ';' CSV HEADER ENCODING 'LATIN1';
+\copy resultats_analyses FROM 'saison-balneaire-2024-resultats-danalyses.csv' DELIMITER ';' CSV HEADER ENCODING 'LATIN1';
+\copy saison_balneaire_info FROM 'saison-balneaire-2024-informations-sur-la-saison.csv' DELIMITER ';' CSV HEADER ENCODING 'LATIN1';
+
+
 INSERT INTO regions
 SELECT DISTINCT code_region, nom_region FROM departements_france ;
 
